@@ -41,9 +41,9 @@ impl LA64MetaData {
 }
 
 impl PagingMetaData for LA64MetaData {
-    const LEVELS: usize = 3;
+    const LEVELS: usize = 4;
     const PA_MAX_BITS: usize = 48;
-    const VA_MAX_BITS: usize = 39;
+    const VA_MAX_BITS: usize = 48;
     type VirtAddr = memory_addr::VirtAddr;
 
     #[inline]

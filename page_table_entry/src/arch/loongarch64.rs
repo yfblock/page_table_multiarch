@@ -92,7 +92,7 @@ impl From<MappingFlags> for PTEFlags {
         if f.is_empty() {
             return Self::empty();
         }
-        let mut ret = Self::V | Self::P;
+        let mut ret = Self::V | Self::P | Self::D;
         if !f.contains(MappingFlags::READ) {
             ret |= Self::NR;
         }
